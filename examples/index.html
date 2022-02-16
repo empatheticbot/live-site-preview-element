@@ -23,6 +23,10 @@
       iframe body {
         overflow: hidden;
       }
+
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -55,11 +59,22 @@
       description="A great Destiny 2 Site."
       url="https://thetraveler.news"
     ></live-site-preview> -->
-    <div>
-      <iframe width="100%" height="100%" src="https://thetraveler.news">
-        The Traveler Times
-      </iframe>
+    <div class="">
+      <a href="https://thetraveler.news">
+        <iframe
+          scrolling="no"
+          id="iframe"
+          width="100%"
+          height="100%"
+          src="https://thetraveler.news"
+        >
+          The Traveler Times
+        </iframe>
+      </a>
     </div>
+    <script>
+      const iframe = document.getElementById('iframe')
+    </script>
     <script type="module" src="../dist/index.js"></script>
   </body>
 </html>
