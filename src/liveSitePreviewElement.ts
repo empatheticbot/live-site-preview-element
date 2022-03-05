@@ -29,6 +29,7 @@ export class LiveSitePreviewElement extends HTMLElement {
    `
 
     iframe.src = this.url
+    iframe.scrolling = 'no'
     iframe.height = this.height.toString()
     iframe.width = this.width.toString()
     iframe.style.overflow = 'hidden'
